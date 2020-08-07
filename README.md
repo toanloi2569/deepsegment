@@ -1,4 +1,4 @@
-'''
+```[python]
 from pyvi import ViTokenizer
 from deepsegment2 import DeepSegment
 
@@ -8,4 +8,4 @@ p = "Theo dõi , đánh giá kết quả làm việc của các nhân viên côn
 p = ViTokenizer.tokenize(p).replace("_"," ").replace("-", "").replace("+", "")
 list_sentences = segmenter.segment_long(p.strip(),10)
 print(list_sentences)
-'''
+```
